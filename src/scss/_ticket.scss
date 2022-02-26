@@ -1,0 +1,5 @@
+@use "index" as i;
+
+body {
+  color: i.$red;
+}
