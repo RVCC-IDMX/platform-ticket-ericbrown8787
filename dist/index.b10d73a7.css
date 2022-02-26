@@ -1,0 +1,71 @@
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket {
+  box-shadow: 5px 5px 13px black;
+  background: #eba77a;
+  margin-inline: auto;
+  margin-block: 100px;
+  display: grid;
+  grid-template-columns: 71.5% 28.5%;
+  width: 886px;
+  height: 364px;
+  padding-block-start: 2.35%;
+  padding-block-end: 1%;
+  padding-inline-start: 1.45%;
+  padding-inline-end: 11%;
+}
+.ticket .body {
+  display: grid;
+  width: 100%;
+  justify-items: stretch;
+  align-self: baseline;
+  align-items: center;
+  padding-block-end: 10px;
+}
+.ticket .body .logo {
+  border: 2px solid black;
+}
+.ticket .body .line {
+  text-align: center;
+}
+.ticket .body__line--one, .ticket .body__line--two, .ticket .body__line--three {
+  border-block-end: 2px solid black;
+}
+.ticket .stub {
+  writing-mode: vertical-rl;
+  display: grid;
+  border-block-start: 2px solid black;
+  align-self: stretch;
+  padding-block-end: 40%;
+}
+.ticket .stub .line {
+  text-align: center;
+}
+.ticket .stub .line__text--title, .ticket .stub .line__text--subtitle {
+  display: block;
+}
+.ticket .stub__line--one {
+  padding-block-start: 10px;
+}
+.ticket .stub__line--one, .ticket .stub__line--two, .ticket .stub__line--three {
+  border-block-end: 2px solid black;
+}
+
+.reference {
+  height: 364px;
+  width: 886px;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */
