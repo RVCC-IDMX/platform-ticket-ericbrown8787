@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Ravenscroft";
+  src: url("../fonts/ravenscroft.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "They Killed Kenny!";
+  src: url("../fonts/kenny.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IM Fell SC";
+  src: url("../fonts/IM-Fell-English-SC-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Syne Bold";
+  src: url("../fonts/Syne-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Traditionell Sans Bold";
+  src: url("../fonts/Traditionell-Sans-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Black Widow";
+  src: url("../fonts/black-widow.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Boden";
+  src: url("../fonts/boden.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Courier Prime Bold";
+  src: url("../fonts/Courier-Prime-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bold Box";
+  src: url("../fonts/bold-box.ttf") format("truetype");
+  font-style: normal;
+}
+
+$print-opacity: 0.7;
+$bleed-opacity: 0.3;
+$ticket-print-color: hsl(0deg, 100%, 0%, $print-opacity);
+$print-bleed-color: hsl(0deg, 100%, 0%, $bleed-opacity);
+$print-bleed: 1px 3px 0px $print-bleed-color, 1px -1px 0px $print-bleed-color;
+$ticket-background-color: #eba77a;
+$ticket-border: 2px solid $ticket-print-color;

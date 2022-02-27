@@ -1,7 +1,5 @@
 @use "index" as i;
-* {
-  // outline: 1px solid yellow;
-}
+
 body {
   display: flex;
   flex-direction: column;
@@ -16,45 +14,26 @@ body {
   margin-inline: auto;
   margin-block: 100px;
   display: grid;
-  grid-template-columns: 61.5% 25.5% 13%;
-  width: 886px;
-  height: 364px;
+  grid-template-columns: 61% 26% 13%;
+  inline-size: 886px;
+  block-size: 364px;
   padding-block-start: 25px;
   padding-block-end: 10px;
   padding-inline-start: 15px;
 
   .body {
     display: grid;
-    grid-template-rows: 24.5% 9% 11.5% 25% 30%;
+    grid-template-rows: 24.5% 10% 12.5% 28% 25%;
 
     .logo {
       border: i.$ticket-border;
+      opacity: i.$print-opacity;
     }
 
-    .line {
-      text-align: center;
-      &__text--line1,
-      &__text--line2 {
-        display: block;
-      }
-
-      &__text--line1 {
-      }
-
-      &__text--line2 {
-      }
-
-      .text {
-        &__vertical {
-          writing-mode: sideways-lr;
-        }
-      }
-    }
-
-    &__line--one,
     &__line--two,
-    &__line--three {
-      border-block-end: i.$ticket-border;
+    &__line--three,
+    &__line--four {
+      border-block-start: i.$ticket-border;
     }
 
     &__line--one {
@@ -70,31 +49,119 @@ body {
     writing-mode: vertical-rl;
     display: grid;
     border-block-start: i.$ticket-border;
-
-    .line {
-      text-align: center;
-
-      &__text--title,
-      &__text--subtitle {
-        display: block;
-      }
-
-      &__text--title {
-      }
-
-      &__text--subtitle {
-      }
-    }
-
-    &__line--one {
-      padding-block-start: 9px;
-    }
+    grid-template-rows: 48% 20% 17% 12%;
 
     &__line--one,
     &__line--two,
     &__line--three {
       border-block-end: i.$ticket-border;
     }
+  }
+}
+
+.line {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    display: block;
+    &--ravenscroft {
+      font-family: "Ravenscroft";
+      font-size: 76px;
+      line-height: 0.75;
+      word-spacing: 7px;
+      letter-spacing: 1px;
+      padding-block-start: 9px;
+      padding-block-end: 13px;
+      display: block;
+    }
+
+    &--kenny {
+      font-family: "They Killed Kenny!";
+      line-height: 0.67;
+      word-spacing: -4px;
+      font-size: 58px;
+    }
+
+    &--im-fell-sc {
+      font-family: "IM Fell SC";
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    &--syne-bold {
+      font-family: "Syne Bold";
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 1.7;
+      letter-spacing: 3px;
+    }
+
+    &--traditionell-sans-bold {
+      font-family: "Traditionell Sans Bold";
+      font-size: 35px;
+      line-height: 0.8;
+      letter-spacing: 4px;
+      word-spacing: 12px;
+      font-weight: bold;
+    }
+
+    &--black-widow {
+      font-family: "Black Widow";
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: 1px;
+      font-size: 21px;
+    }
+
+    &--boden {
+      font-family: "Boden";
+      font-size: 30px;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 1.3;
+    }
+
+    &--courier-prime-bold {
+      font-family: "Courier Prime Bold";
+      color: i.$print-bleed-color;
+      text-shadow: i.$print-bleed;
+      font-size: 27px;
+      font-stretch: condensed;
+      word-spacing: -11px;
+      line-height: 1.55;
+    }
+
+    &--bold-box {
+      color: i.$print-bleed-color;
+      font-family: "Bold Box";
+      text-shadow: i.$print-bleed;
+      line-height: 1.5;
+      font-size: 18px;
+      letter-spacing: 3px;
+      word-spacing: 3px;
+      padding-inline-start: 28px;
+    }
+  }
+
+  &__rule {
+    border: 1px solid i.$ticket-print-color;
+    block-size: 1px;
+    inline-size: 50px;
+  }
+}
+
+.text {
+  color: i.$ticket-print-color;
+  &__vertical {
+    writing-mode: sideways-lr;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 0.5;
+    font-style: oblique;
   }
 }
 
