@@ -70,7 +70,7 @@ body {
     &--ravenscroft {
       font-family: "Ravenscroft";
       font-size: 76px;
-      line-height: 0.75;
+      line-height: 0.8;
       word-spacing: 7px;
       letter-spacing: 1px;
       padding-block-start: 9px;
@@ -90,6 +90,7 @@ body {
       font-size: 23px;
       font-weight: bold;
       line-height: 1.2;
+      // word-spacing: 5px;
     }
 
     &--syne-bold {
@@ -112,7 +113,7 @@ body {
     &--black-widow {
       font-family: "Black Widow";
       font-weight: bold;
-      line-height: 1;
+      line-height: 0.95;
       letter-spacing: 1px;
       font-size: 21px;
     }
@@ -136,7 +137,7 @@ body {
     }
 
     &--bold-box {
-      color: i.$print-bleed-codisplay: block;
+      color: i.$print-bleed-color;
       font-family: "Bold Box";
       text-shadow: i.$print-bleed;
       line-height: 1.5;
@@ -152,7 +153,7 @@ body {
     block-size: 1px;
     inline-size: 50px;
   }
-
+}
 
 .text {
   color: i.$ticket-print-color;
@@ -165,4 +166,7 @@ body {
   }
 }
 
-
+.reference {
+  height: 364px;
+  width: 886px;
+}
