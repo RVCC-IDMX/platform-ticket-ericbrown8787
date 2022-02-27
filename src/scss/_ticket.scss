@@ -136,7 +136,7 @@ body {
     }
 
     &--bold-box {
-      color: i.$print-bleed-color;
+      color: i.$print-bleed-codisplay: block;
       font-family: "Bold Box";
       text-shadow: i.$print-bleed;
       line-height: 1.5;
@@ -165,7 +165,4 @@ body {
   }
 }
 
-.reference {
-  height: 364px;
-  width: 886px;
-}
+
