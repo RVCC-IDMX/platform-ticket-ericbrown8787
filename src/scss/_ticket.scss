@@ -1,4 +1,7 @@
 @use "index" as i;
+* {
+  // outline: 1px solid yellow;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -9,34 +12,43 @@ body {
 .ticket {
   box-shadow: 5px 5px 13px i.$ticket-print-color;
   background: i.$ticket-background-color;
+  border-radius: 3px;
   margin-inline: auto;
   margin-block: 100px;
   display: grid;
-  // grid-template-columns: repeat(12, 1fr);
-  grid-template-columns: 71.5% 28.5%;
+  grid-template-columns: 61.5% 25.5% 13%;
   width: 886px;
   height: 364px;
-  padding-block-start: 2.35%;
-  padding-block-end: 1%;
-  padding-inline-start: 1.45%;
-  padding-inline-end: 11%;
+  padding-block-start: 25px;
+  padding-block-end: 10px;
+  padding-inline-start: 15px;
 
   .body {
     display: grid;
-    width: 100%;
-    justify-items: stretch;
-    align-self: baseline;
-    align-items: center;
-    // grid-column: span 8;
-    padding-block-end: 10px;
+    grid-template-rows: 24.5% 9% 11.5% 25% 30%;
 
     .logo {
-      // width: 100%;
       border: i.$ticket-border;
     }
 
     .line {
       text-align: center;
+      &__text--line1,
+      &__text--line2 {
+        display: block;
+      }
+
+      &__text--line1 {
+      }
+
+      &__text--line2 {
+      }
+
+      .text {
+        &__vertical {
+          writing-mode: sideways-lr;
+        }
+      }
     }
 
     &__line--one,
@@ -44,15 +56,20 @@ body {
     &__line--three {
       border-block-end: i.$ticket-border;
     }
+
+    &__line--one {
+      padding-block: 3px;
+    }
+
+    &__line--two {
+      padding-block: 5px;
+    }
   }
 
   .stub {
     writing-mode: vertical-rl;
     display: grid;
     border-block-start: i.$ticket-border;
-    align-self: stretch;
-    // grid-column: span 4;
-    padding-block-end: 40%;
 
     .line {
       text-align: center;
@@ -70,7 +87,7 @@ body {
     }
 
     &__line--one {
-      padding-block-start: 10px;
+      padding-block-start: 9px;
     }
 
     &__line--one,
